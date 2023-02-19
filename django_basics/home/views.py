@@ -18,8 +18,8 @@ def contact(request):
         email = request.POST['email']
         question = request.POST['question']
         # print(email, question)
-        ins = Contact(email=email, question=question)
-        ins.save()
+        contact = Contact(email=email, question=question)
+        contact.save()
         print("the data has been written to the DB")
     # return HttpResponse("This is my contact page (/)")
     return render(request, 'contact.html')
