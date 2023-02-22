@@ -4,7 +4,13 @@
 {% block homeactive %} active {%endblock homeactive%}
 {% block title %} Home {%endblock title%}
 {% block body %}
-  <div class="container">
+<style>
+  .responsive {
+    width: 100%;
+    height: auto;
+  }
+</style>
+  <div class="container-fluid mt-0">
   <div id="carouselExampleIndicators" class="carousel slide">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -13,29 +19,38 @@
           aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
           aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="{% static 'img/anh1.jpg' %}" class="d-block w-100" alt="fuoiashfllk">
+          <img src="{% static 'img/anh1.jpg' %}" class="responsive" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Tre trau</h5>
-            <p style="color: red;">This is me when I was a kid</p>
+            <h4>Young buffalo</h4>
+            <p>When I was a kid</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="{% static 'img/anh2.jpg' %}" class="d-block w-100" alt="...">
+          <img src="{% static 'img/anh2.jpg' %}" class="responsive" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5>In Germany</h5>
+            <h4>In Germany</h4>
             <p>Call me a german girl or we will not talk</p>
           </div>
         </div>
         <div class="carousel-item">
           <img src="{% static 'img/anh3.jpg' %}" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5>158cm</h5>
+            <h4>158cm</h4>
             <p>Look at me</p>
           </div>
-        </div>
+        </div>     
+        <div class="carousel-item">
+          <img src="{% static 'img/anh4.jpg' %}" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h4>The Face</h4>
+            <p>Not too bad</p>
+          </div>
+        </div>     
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
         data-bs-slide="prev">
@@ -53,37 +68,20 @@
   <div class="container my-3">
     <h2 class="text-center my-3 py-3"> Me at a glance</h2>
     <div class="row">
-      <div class="col-md-4">
-        <div class="card" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="...">
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
             <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
       </div>
-
-      <div class="col-md-4">
-        <div class="card" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="...">
+      <div class="col-sm-6">
+        <div class="card">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
             <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
