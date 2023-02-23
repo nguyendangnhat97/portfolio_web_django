@@ -23,3 +23,9 @@ def contact(request):
         print("the data has been written to the DB")
     # return HttpResponse("This is my contact page (/)")
     return render(request, 'contact.html')
+
+def blog(request):
+    return render(request, 'blog.html')
+
+def blog1(request):
+    return render(request, 'blog1.html')

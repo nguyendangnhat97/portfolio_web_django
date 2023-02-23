@@ -1,8 +1,46 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block projectsactive %}active {%endblock projectsactive%}
+
 {% block title %} Projects {%endblock title%}
+
 {% block body %}
+<div class="container my-3">
+    <h2 class="text-center my-3 py-3"> My awesome Projects</h2>
+    <div class="row">
+        <div class="card text-center my-5">
+            <div class="card-body">
+              <h5 class="card-title">Kỷ yếu cuối cấp 3</h5>
+              <p class="card-text">Một tay tôi tổ chức từ đầu đến cuối</p>
+              <a href="https://www.facebook.com/watch/?v=2811588159122241" class="btn btn-primary">Video I cried</a>
+            </div>
+            <div class="card-footer text-muted">
+              2020
+            </div>
+          </div>
+        <div class="card text-center my-5">
+            <div class="card-body">
+              <h5 class="card-title">Cast Camp by Vietcera</h5>
+              <p class="card-text">I was not main speaker, so the group failed</p>
+              <a href="https://www.facebook.com/mnhi27/posts/pfbid02U75KD28L4Tfa2NdwXTPmsGEgoPkQjYrTiP5qVu6Rgehfr8K2xGUjCAjwAaehAS8jl" class="btn btn-primary">Link to the camp</a>
+            </div>
+            <div class="card-footer text-muted">
+              2021
+            </div>
+          </div>
+          <div class="card text-center my-5">
+            <div class="card-body">
+              <h5 class="card-title">VSAF Christmas Event</h5>
+              <p class="card-text">Chân ướt chân ráo vào team, sau chương trình tôi một phát lên ngồi chức phó chủ nhiệm team truyền thông</p>
+              <a href="https://www.facebook.com/hsvffm/posts/pfbid02pAAQ5S47CMTarKJjbhwQUH9CBCge3VJuk6wPpwKzwRoY21YKYjEJeTnGuiMgo7wsl" class="btn btn-primary">See more</a>
+            </div>
+            <div class="card-footer text-muted">
+              2022
+            </div>
+          </div>
+    </div>
+  </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
 {% endblock body %}
