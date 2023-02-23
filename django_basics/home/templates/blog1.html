@@ -1,9 +1,40 @@
 {% extends "base.html" %}
 {% load static %}
 {% block blogactive %}active {%endblock blogactive%}
-{% block title %} Projects {%endblock title%}
+{% block title %} Blog 01 {%endblock title%}
 {% block body %}
-<h2 class="text-center my-3 py-3"> "Hồi ức tuổi 20"</h2>
+<style>
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    footer {
+        text-align: center;
+    }
+</style>
+<div class="container mt-0">
+    <h2 class="text-center my-3 py-3"> "Hồi ức tuổi 20"</h2>
+    <p> Đó là lúc tôi chuẩn bị lên đường đến một nơi xa xôi - nước Đức, tôi khá lo lắng vì đó lần đầu tiên rời xa gia đình, nơi mà tôi được bao bọc như một công chúa, không phải lo ăn gì nấu gì, không cần quan tâm đến dọn dẹp, 
+        giặt giũ.  Vào ngày bay, tôi đã khóc rất nhiều (chắc bạn nào lần đầu bay ra nước ngoài cũng khóc thôi), rời xa người mình yêu thương quả là điều không dễ dàng. Đến nơi, tôi bắt đầu làm quen với cuộc sống, quen với một vài người bạn, 
+        tôi hay tâm sự với một chị mà tôi cảm thấy tin tưởng, đến nỗi chúng tôi ở chung nhà, nói chuyện suốt ngày, tôi đi học cũng vẫn nhắn tin cho nhau, tôi thấy vui, điều đó giúp tôi cảm thấy thoải mái hơn vì thời gian đó cũng là lúc tôi chia tay mối tình ba năm. 
+        Chị và tôi cũng có những xích mích, thậm chí khiến tôi thất vọng về người bạn của mình, nhưng nghĩ lại thì không có gì là không thể tha thứ, trừ khi đó là sự phản bội. Với lại tôi cũng có lỗi, và chị cũng không trách tôi. Anyway, mọi chuyện đã xong và giờ chúng tôi hiểu nhau hơn.
+    </p>
+    <img src="{% static 'img/go_out.jpg' %}" width="auto" height="800" class="center">
+    <br>
+    <p>
+        Quay lại với chuyện tình cảm, anh lừa dối tôi, những gì mà chúng tôi từng hứa với nhau đều không còn giá trị. 
+        Nhưng thôi tạm gác lại những nỗi buồn, điều tôi cần làm là rút ra những bài học và hoàn thiện bản thân hơn trong tương lai. Sau chuyện tình này, 
+        có lẽ tôi không quá trông đợi vào những lời nói nữa, chúng ta có thể tin những lời hứa ngay tại thời điểm đó, nhưng thời gian trôi qua thì ai mà biết được, 
+        con người dễ dàng thay đổi mà. Trong cuộc đời, có những người đến và rời đi, việc của chúng ta đơn giản chỉ là chấp nhận nó. Thứ duy nhất ở lại với chúng ta là chính chúng ta, 
+        vì vậy hãy xây dựng thế giới bên trong bạn vững chãi, để bạn cảm thấy thư thái, an yên, tự tại, biết mình đang đi về đâu và làm chủ cuộc sống của mình. 
+    </p>
+    <br>
+    <img src="{% static 'img/love_quote.jpg' %}" width="auto" height="600" class="center">
+    <br><br><br>
+    <footer id="footer" >---The end---</footer>
+
+</div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
 {% endblock body %}
