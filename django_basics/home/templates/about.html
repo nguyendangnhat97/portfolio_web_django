@@ -1,10 +1,10 @@
 {% extends "base.html" %}
-
+{% load static %}
 {% block aboutactive %}active {%endblock aboutactive%}
 {% block title %} About {%endblock title%}
 {% block body %}
-<br><br><br>
-<div class="container mt-3">
+<div class="container mt-5">
+    <h2 class="text-center my-3 py-3"> About me</h2>
     <table class="table">
         <tr>
             <th scope="row">1</th>
@@ -28,22 +28,13 @@
         </tr>
         <tr>
             <th scope="row">3</th>
-            <th>Kỹ năng</th>
-            <td>- Tiếng Đức<br>
-                - Tiếng Anh<br>
-                - Tin học văn phòng<br>
-                - Thao túng tâm lý
-            </td>
-        </tr>
-        <tr>
-            <th scope="row">4</th>
             <th>Câu nói yêu thích</th>
             <td>"Thích tìm cách không thích tìm lý do"<br>
                 (Không phải lúc nào cũng đúng nhưng cứ thích nói)
             </td>
         </tr>
         <tr>
-            <th scope="row">5</th>
+            <th scope="row">4</th>
             <th>Khả năng đặc biệt</th>
             <td>- Linh cảm bằng giác quan thứ 7<br>
                 (Có những việc mình biết bằng cách khác nhưng mình cứ phải nói là linh cảm cho người ta sợ)<br>
@@ -51,14 +42,108 @@
             </td>
         </tr>
         <tr>
-            <th scope="row">6</th>
+            <th scope="row">5</th>
             <th>Khác</th>
             <td>- Thích màu hồng<br>
                 - Yêu sự ngọt ngào
             </td>
         </tr>
     </table>
-</div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="section-title">
+            <h2>Kỹ năng</h2>
+          </div>
+  
+          <div class="row skills-content">
+  
+            <div class="col-lg-6">
+  
+              <div class="progress">
+                <span class="skill">English <i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+  
+              <div class="progress">
+                <span class="skill">Germany  <i class="val">80%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+  
+              
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="progress">
+                  <span class="skill">Excel <i class="val">75%</i></span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                
+              <div class="progress">
+                <span class="skill">Thao túng tâm lý <i class="val">100%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+  
+            </div>
+  
+          </div>
+  
+        </div>
+    </section><!-- End Skills Section -->
+    <!-- ======= Facts Section ======= -->
+    <section id="facts" class="facts">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="section-title">
+            <h2>Facts</h2>
+          </div>
+  
+          <div class="row counters">
+  
+            <div class="col-lg-3 col-6 text-center">
+              <span data-purecounter-start="0" data-purecounter-end="600" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Instagram followers</p>
+            </div>
+            
+            <div class="col-lg-3 col-6 text-center">
+              <span data-purecounter-start="0" data-purecounter-end="53" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Kg</p>
+            </div>
 
+            <div class="col-lg-3 col-6 text-center">
+              <span data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Năm sống trên Trái Đất</p>
+            </div>
+  
+            <div class="col-lg-3 col-6 text-center">
+              <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Người yêu cũ</p>
+            </div>
+  
+          </div>
+  
+        </div>
+      </section><!-- End Facts Section -->
+</div>
+      <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> -->
+      <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+      <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+      <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+      <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+      <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+      <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+      <script src="{% static 'assets/vendor/waypoints/noframework.waypoints.js' %}"></script>
+      <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+      
+      <!-- Template Main JS File -->
+      <script src="{% static 'assets/js/main.js' %}"></script>
 {% endblock body %}
