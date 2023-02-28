@@ -451,11 +451,12 @@ h6 {
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
-  color: #eef526;
+  color: #e30c0c;
+  text-align: center; 
 }
 
 #hero h2 {
-  color: #edea39;
+  color: #c80909;
   margin: 10px 0 0 0;
   font-size: 22px;
 }
